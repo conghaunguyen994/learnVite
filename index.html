@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>02 - Vite React Demo</title>
+</head>
+<body>
+  <!-- Điểm gắn kết của React -->
+  <div id="root"></div>
+
+  <!-- 
+    ĐIỂM KHÁC BIỆT LỚN CỦA VITE:
+    - File index.html nằm ngay ở thư mục gốc (root), không phải trong thư mục public/ như Webpack!
+    - Khai báo trực tiếp: <script type="module" src="/src/main.jsx"></script>
+    - Trình duyệt sẽ yêu cầu file này dưới dạng Native ES Module. 
+      Vite bắt request đó, dùng esbuild dịch JSX thành JS và trả về ngay lập tức!
+  -->
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>
